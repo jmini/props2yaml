@@ -1,6 +1,7 @@
-[Properties to YAML Converter](https://props2yaml-codearte2foss.rhcloud.com/conversion) 
+Properties to YAML Converter
 ===
-[![Build Status](https://travis-ci.org/Codearte/props2yaml.svg)](https://travis-ci.org/Codearte/props2yaml) [![Coverage Status](https://coveralls.io/repos/Codearte/props2yaml/badge.svg?branch=master&service=github)](https://coveralls.io/github/Codearte/props2yaml?branch=master) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.codearte.props2yaml/props2yaml/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.codearte.props2yaml/props2yaml)
+
+**NOTE:** forked from the [original repository](https://github.com/Codearte/props2yaml) just to test how to build the project with Gradle. In particular to have a functional test approach for the [`de.benediktritter.maven-plugin-development` gradle plugin](https://www.benediktritter.de/maven-plugin-development/). Discussion open at [britter/maven-plugin-development#41](https://github.com/britter/maven-plugin-development/issues/41).
 
 Library usage:
 
