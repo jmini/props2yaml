@@ -1,0 +1,35 @@
+wrapper {
+  version '7.3'
+}
+
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'maven-publish'
+
+    repositories {
+        // mavenLocal()
+        maven {
+            url = uri('https://repo.maven.apache.org/maven2/')
+        }
+    }
+
+    group = 'io.codearte.props2yaml'
+    version = '0.6-SNAPSHOT'
+
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                from(components.java)
+            }
+        }
+    }
+
+    java {
+        withJavadocJar()
+        withSourcesJar()
+        compileJava.options.encoding = "UTF-8"
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(8)
+        }
+    }
+}
